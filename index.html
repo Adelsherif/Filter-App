@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+            <h1><span>Filter</span> App</h1>
+            </div>
+            <div class="links">
+                <ul class="firstList">
+                    <li class="innerList"><div class="icon"><i class="fa-solid fa-bars-staggered fa-2x"></i></div>
+                        <ul class="secondList">
+                            <li>Brightness
+                                <form>
+                                    <input type="range" name="range" id="range" data-type="brightness" value="0" min="1" max="2" step=".1"/>
+                                    <p class="value"></p>
+                                </form>
+                            </li>
+                            <li>Contrast
+                                <form>
+                                    <input type="range" name="range" id="range" data-type="contrast" value="0" min="1" max="5" step=".1"/>
+                                    <p class="value"></p>
+                                </form>
+                            </li>
+                            <li>saturate
+                                <form>
+                                    <input type="range" name="range" id="range" data-type="saturate" value="0" min="1" max="5" step=".1"/>
+                                    <p class="value"></p>
+                                </form>
+                            </li>
+                            <li>Invert 
+                                    <form>
+                                        <input type="range" name="range" id="range" data-type="invert" value="0" min="1" max="5" step=".1"/>
+                                        <p class="value"></p>
+                                    </form>
+                                </li>
+                                <li>Sepia
+                                    <form>
+                                        <input type="range" name="range" id="range" data-type="sepia" value="0" min="1" max="5" step=".1"/>
+                                        <p class="value"></p>
+                                    </form>
+                                </li>
+                                <li>GrayScale
+                                    <form>
+                                        <input type="range" name="range" id="range" data-type="grayScale" value="0" min="1" max="5" step=".1"/>
+                                        <p class="value"></p>
+                                    </form>
+                                </li>
+                            </ul>
+                    </li>
+                    </ul>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image">
+                <div class="section">
+                    <p>I Can Only Imagin...</p>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <label for="fileInput">Select Image</label>
+                    <input type="file" id="fileInput" name="file" />
+                </form>
+            </div>
+        </div>
+        </main>
+    <footer>
+        <h3 class="toggle">CopyRight <i class="fa-solid fa-copyright"></i><span> Adel Sherif</span> 2022</h3>
+    </footer>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
